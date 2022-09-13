@@ -7,6 +7,7 @@ module.exports = {
 }
 
  */
-
+//Para incluir algunos elementos de un modulo:
 const {saludar,saludarHolaMundo}= require('./saludos');
+
 console.log(saludarHolaMundo());
