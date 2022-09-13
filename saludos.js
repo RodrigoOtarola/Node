@@ -15,6 +15,20 @@ console.log(saludar('Rodrigo'));*/
 function saludar(nombre) {
     return `Hola ${nombre}`;
 }
+
+function saludarHolaMundo(){
+    return 'Hola Mundo';
+}
 // export, module.exports.saludar(nombreCreado) = saludar() function a exportar
-module.exports.saludar = saludar();
-//console.log(module.exports);
+/*module.exports.saludar = saludar;
+module.exports.saludarHolaMundo = saludarHolaMundo;*/
+
+//export com arreglo para pasar más funciones
+module.exports = {
+    saludar:saludar,
+    saludarHolaMundo:saludarHolaMundo,
+}
+
+
+
+
