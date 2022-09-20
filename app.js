@@ -158,3 +158,51 @@ miPedidoDePizza
     .then(null,(mensajeDeError) =>{
         console.log(mensajeDeError);
     });*/
+
+//Catch: Funciona cuando la promesa es rechazada.
+/*const estatusPedido = ()=>{
+    return Math.random() < 0.8;
+};
+
+const miPedidoDePizza = new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        if(estatusPedido()){
+            resolve('Pedido Exitoso...');
+        }else{
+            reject('Ocurrio un error. Intente nuevamente');
+        }
+    },2000);
+});
+
+miPedidoDePizza
+    .then((mensajeDeConfirmacion)=>{
+        console.log(mensajeDeConfirmacion);
+    })
+    //Se pasa el catch
+    .catch((mensajeDeError) =>{
+        console.log(mensajeDeError);
+    });*/
+
+//Async Await:
+function ordenarProducto(producto){
+    return new Promise((resolve,reject)=>{
+        console.log(`Ordenando: ${producto} de prueba.`);
+        setTimeout(()=>{
+            if(producto === 'taza'){
+                resolve ('Producto en stock');
+            }else {
+                reject('Producto no disponible');
+            }
+        },2000);
+    });
+}
+function procesarPedido(respuesta){
+    return new Promise((resolve,reject)=>{
+        console.log('Procesando respuesta');
+        console.log(`La respuesta fue: ${respuesta}`);
+        setTimeout(()=>{
+            resolve('Disfruta tu podructo');
+        },4000);
+    })
+}
+//
