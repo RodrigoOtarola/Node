@@ -18,7 +18,7 @@ console.log(os.homedir());
 console.log(os.uptime());*/
 
 //modulo Timers: contiene funciones que ejecutan código luego de un cierto periodo de tiempo.
- /*Funciones conocidas: setTimeOut(), setImmediate(), setInterval().*/
+/*Funciones conocidas: setTimeOut(), setImmediate(), setInterval().*/
 
 //setTimeOut(): Ejecuta código luego de un número especifico de milisegundos, sintaxis setTimeOut(funcion,retraso,argumento)
 /*function mostrarTema(tema){
@@ -183,8 +183,8 @@ miPedidoDePizza
         console.log(mensajeDeError);
     });*/
 
-//Async Await:
-function ordenarProducto(producto){
+//sin Async Await:
+/*function ordenarProducto(producto){
     return new Promise((resolve,reject)=>{
         console.log(`Ordenando: ${producto} de prueba.`);
         setTimeout(()=>{
@@ -197,12 +197,38 @@ function ordenarProducto(producto){
     });
 }
 function procesarPedido(respuesta){
-    return new Promise((resolve,reject)=>{
+    return new Promise((resolve)=>{
         console.log('Procesando respuesta');
         console.log(`La respuesta fue: ${respuesta}`);
         setTimeout(()=>{
-            resolve('Disfruta tu podructo');
+            resolve('Disfruta tu producto');
         },4000);
     })
-}
+}*/
 //
+/*ordenarProducto('taza')
+.then(respuesta=>{
+    console.log('Respuesta recibida');
+    console.log(respuesta);
+    //Ejecutara 1ro la function ordenarProducto y después procesarPedido
+    return procesarPedido(respuesta);
+})
+.then(respuestaProcesada =>{
+    console.log(respuestaProcesada);
+})
+.catch(error =>{
+    console.log(error);
+})*/
+
+//Con Async Await: Todas retornan una promesa.
+/*async function realizarPedido(producto) {
+    try {
+        const respuesta = await ordenarProducto(producto);
+        console.log('Respuesta recibida');
+        const respuestaProcesada = await procesarPedido(respuesta);
+        console.log(respuestaProcesada);
+    } catch (error) {
+        console.log(error);
+    }
+}
+realizarPedido('taza');*/
