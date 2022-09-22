@@ -274,7 +274,7 @@ console.log(miURL.pathname);//Nombre de camino.
 console.log(miURL.searchParams);//Parametros Query.*/
 
 //Routing: Manejar solicitudes del cliente.
-const http = require('http');
+/*const http = require('http');
 
 const {infoCursos} = require('./cursos');
 
@@ -332,5 +332,16 @@ function manejarSolicitudPOST(req,res){
 const puerto = 3000;
 
 servidor.listen(puerto,()=>{
+    console.log('Servidor Ok');
+});*/
+
+//Prueba con nodemon.
+const http = require('http');
+
+const servidor = http.createServer((req, res)=>{
+    res.end('Hola Rodrigo');
+});
+
+servidor.listen(3000,()=>{
     console.log('Servidor Ok');
 });

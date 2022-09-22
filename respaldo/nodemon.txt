@@ -1,0 +1,9 @@
+Nodemon: Herramienta que reinicia la aplicacion de node.js cuando detecta algun cambio.
+
+instalar: npm install nodemon------- -g es para instalar de forma global
+
+Si arroja error al ejecutar nodemon app.js, ejecutar lo siguiente en powershell
+
+1) Get-ExecutionPolicy -List
+2) Set-ExecutionPolicy RemoteSigned -Scope CurrentUser y presionar S
+3) listo
