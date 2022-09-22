@@ -1,0 +1,16 @@
+Express: Es el framework web más popular de Node.js.
+
+Caracteristicas:
+
+    - Routin.
+    - Enfocado en alto rendimiento.
+    - Nos permite desarrollar aplicaciones de Node.js más rapidamente con código más conciso.
+
+Conceptos Basicos:
+
+    - CRUD: archiconocido.
+    - API: Interfaz de softwares, que permites que dos o más programas se comuniquen entre si.
+    - REST: Estilo de arquitectura de software para sistemas hipermedia distribuidos como WWW.
+    - RESTfull API: Es una API basa en REST.
+
+Para instalar: npm install express

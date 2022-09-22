@@ -336,7 +336,7 @@ servidor.listen(puerto,()=>{
 });*/
 
 //Prueba con nodemon.
-const http = require('http');
+/*const http = require('http');
 
 const servidor = http.createServer((req, res)=>{
     res.end('Hola Rodrigo');
@@ -344,4 +344,4 @@ const servidor = http.createServer((req, res)=>{
 
 servidor.listen(3000,()=>{
     console.log('Servidor Ok');
-});
+});*/
