@@ -1,0 +1,45 @@
+* Modelo cliente servidor:
+
+- Se usa para acceder a internet y obtener recursos e información.
+
+- Cliente: El navegador desde el cual se realizan las solicitudes al servidor.
+
+- Servidor: Programa que se ejecuta en un servidor físico, envía información.
+
+* HTTP: Hipertext Transfer Protocol  protocolo que define el formato de los mensajes.
+
+- protocolo: Conjunto de reglas que permiten transmitir información entre dispositivos de una red.
+
+* Solicitudes HTTP:
+
+- Request: Solicitud al servidor tiene los siguientes elementos:
+
+    - Método http:  get o post
+    - Camino (path).
+    - Version de HTTP.
+    - Cabeceras (headers)
+    - Cuerpo (body): Proveen info adicional sobre la solicitud, solo las que requieran enviar POST y PUT.
+
+* Metodos HTTP:
+
+    - Get: Para SOLICITAR un recurso especifico.
+    - Post: Para CREAR un recurso especifico.
+    - Put: Para ACTUALIZAR recurso especifico.
+    - Delete: Para ELIMINAR recuros especifico.
+
+* Respuestas HTTP:
+
+    - response: contiene lo siguiente:
+        - Codigo de estado.
+        - Texto solicitado.
+        . Version de http.
+        - Cabeceras (headers)
+        - Cuerpo.
+
+* Codigos de estado HTTP:
+
+    - respuestas informativas (100-199).
+    - Respuestas satisfactorias (200-299).
+    - Redirecciones (300-399).
+    - Errores de los clientes (400-499).
+    - Errores de los servidores (500-599).
